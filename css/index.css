@@ -1,0 +1,588 @@
+/*-------------------NAVBAR------------------*/
+nav.navbar {
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+    color: var(--brown);
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid var(--brown);
+}
+nav img{
+    width: 10%;
+}
+nav .text h3{
+    font-size: 25px;
+}
+nav .text p{
+    font-size: 20px;
+}
+nav .text p{
+    color: rgb(85, 69, 23);
+}
+nav ul.navbar-nav li a.nav-link{
+    color: var(--brown) !important;
+}
+nav .icons i{
+    font-size: 25px;
+    cursor: pointer;
+}
+nav .navbar-nav{
+    gap: 20px;
+}
+nav .navbar-nav .nav-item .nav-link {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 1s;
+    border-radius: 10px;
+}
+nav .navbar-nav .nav-item .nav-link:hover{
+    color: var(--golden) !important;
+}
+nav .navbar-nav .nav-item .nav-link::before,
+nav .navbar-nav .nav-item .nav-link::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 23px solid var(--brown2);
+    transition: 1s;
+    z-index: -1;
+}
+
+nav .navbar-nav .nav-item .nav-link::before {
+    left: -100%;
+    border-right-color: transparent;
+}
+
+nav .navbar-nav .nav-item .nav-link::after {
+    left: 100%;
+    border-left-color: transparent;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover::before,
+nav .navbar-nav .nav-item .nav-link:hover::after {
+    left: 0;
+}
+
+nav .navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+}
+nav .icons i.heart{
+    color: rgb(168, 9, 9);
+}
+nav .icons i.shopping{
+       color: var(--brown2);
+}
+nav .dropdown-menu{
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+}
+nav .dropdown-menu li a:not(.disabled){
+    color: var(--brown) !important;
+}
+nav .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.5s ease;
+}
+
+nav .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+nav a.disabled {
+    width: fit-content;
+    margin: auto;
+    transition-duration: .1s;
+}
+nav .dropdown-menu.show a.disabled::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--brown);
+    width: 0;
+    margin: auto;
+    animation: animateNav 1s linear forwards;
+}
+/*-------------------HOME------------------*/
+#home {
+    background-image: url("../WhatsApp\ Image\ 2026-07-18\ at\ 7.25.20\ PM.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+#home .container {
+    height: 100%;
+}
+#home .text {
+    height: 100%;
+}
+#home .text h3{
+    color: var(--golden);
+    font-size: 5rem;
+text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+#home .text p {
+    color: #fff;
+    font-size: 1.5rem;
+    width: 50%;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+#home .text p::after{
+    content: "";
+    animation-name: write;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+        border-right: 3px solid var(--golden);
+    padding-right: 5px;
+}
+.dropdown-arrow {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 5px solid currentColor;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+#home button{
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition-duration: 1s;
+    cursor:pointer;
+}
+#home button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    background-color: rgba(82, 59, 51, 0.6);
+    width: 30%;
+    height: 300%;
+    transform: rotate(30deg);
+    z-index: 3;
+}
+#home button:hover{
+transform: scale(0.95);
+}
+#home button:hover::after{
+    left: 200%;
+    transition-duration: 1.5s;
+}
+#home button a{
+    text-decoration: none;
+    color: var(--brown);
+    font-size: 1.2rem;
+}
+
+/*........................BOOKS.........................*/
+#books h2{
+    color: var(--golden);
+    font-size: 3rem;
+}
+#books .box{
+    width: 500px;
+    margin: auto;
+    border: 2px solid var(--golden);
+    margin-bottom: 50px;
+    color: var(--golden);
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 20px;
+}
+#books .box button {
+    margin-top: 20px;
+    border: none;
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+    color: var(--brown);
+    border-radius: 15px;
+    padding: 10px 15px;
+    transition: all 1s ease;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#books .box button:hover {
+    color: var(--golden);
+    background: var(--offwhite);
+    box-shadow: 0 5px 15px rgba(186, 134, 21, 0.3);
+}
+#books .box {
+    transition: all 0.4s ease;
+}
+
+#books .box:hover {
+    transform: translateY(-5px);
+    box-shadow:
+    rgba(210, 155, 54, 0.20) 0px 5px,
+    rgba(210, 155, 54, 0.15) 0px 10px,
+    rgba(190, 160, 84, 0.10) 0px 15px,
+    rgba(186, 134, 21, 0.07) 0px 20px,
+    rgba(186, 134, 21, 0.03) 0px 25px;
+}
+#books #special .carousel-indicators button{
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--golden);
+}
+.carousel-control-prev,
+.carousel-control-next {
+width: 15%;
+z-index: 10;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+width: 30px;
+height: 30px;
+filter: invert(70%) sepia(60%) saturate(800%) hue-rotate(5deg);
+transition-duration: 0.5s;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+transform: scale(1.1);
+}
+#books .carousel-item {
+    border: 2px solid var(--golden);
+    border-radius: 20px;
+    overflow: hidden;
+    padding-bottom: 50px;
+    background: linear-gradient(135deg, #2E1B12 10%, #6F4932 30%, #3B2115 80%);
+}
+#books .carousel-item .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--golden);
+    font-size: 25px;
+    padding: 15px 10px;
+    margin: 10px 0;
+}
+#books .carousel-item .info p {
+    border: 2px solid var(--golden);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 5px ;
+    margin: 0 50px 0;
+}
+#books .carousel-item .actions {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 0 50px 0px;
+}
+#books .carousel-item .actions i {
+    width: 40px;
+    height: 40px;
+    background-color: var(--offwhite);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#books .carousel-indicators button{
+    background-color: var(--golden);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    display: none;
+    transition-duration: 1s;
+    z-index: 9999;
+}
+.popup .special{
+    transition-duration: 1s;
+    position: relative;
+    z-index: 2;
+}
+.popup.show {
+    opacity: 1;
+}
+.popup.active{
+    display: flex;
+}
+.popup.active {
+    display: flex;
+}
+.popup.show {
+    opacity: 1;
+}
+.popup .carousel {
+    width: 500px;
+    max-width: 90%;
+}
+.popup .special-card {
+    position: relative;
+    z-index: 2;
+}
+/*----------------------------------------------------Carigories-------------------------------------------------------------*/
+#categories{
+    border-top: 1px dotted var(--golden);
+        border-bottom: 1px dotted var(--golden);
+}
+#categories h2{
+    color: var(--golden);
+    font-size: 3rem;
+}
+#categories .box{
+    border: 2px solid var(--golden);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#categories .slider {
+    width: 100%;
+    overflow: hidden;
+}
+#categories .all{
+    display: flex;
+    width: max-content;
+    animation-name: moveBooks;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+#categories .slide {
+    width: 260px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    transition-duration: .5s;
+}
+#categories .slide:hover{
+    transform: scale(.95);
+}
+#categories .box .info{
+    padding: 10px 15px;
+    color: var(--golden);
+    background-color: var(--beige);
+}
+.box {
+    position: relative;
+}
+.slider .all .slide:nth-child(4) .box::after,
+.slider .all .slide:nth-child(14) .box::after  {
+    content: "Most Reading";
+    position: absolute;
+    top: 3px;
+    right: -40px;
+    background-color: #198754;
+    color: white;
+    padding: 8px 40px;
+    transform: rotate(30deg);
+    z-index: 3;border-radius: 10px;
+}
+
+/*----------------------------------------------------AUTHORS-------------------------------------------------------------*/
+#authors h2,
+#authors h4 {
+    color: var(--golden);
+    margin: auto;
+    width: fit-content;
+    transition-duration: 1s;
+}
+#authors p {
+    color: var(--offwhite);
+}
+#authors .col-lg-2 {
+    transition-duration: 1s;
+}
+#authors .box {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--golden);
+    transition-duration: 1s;
+    animation-name: moveAuthor;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;     /*  to move one after one  */
+    animation-iteration-count: infinite;
+}
+#authors img {
+    transition-duration: 1s;
+}
+#authors .col-lg-2:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+#authors .col-lg-2:hover .box {
+    box-shadow: 0 0 15px rgba(197, 155, 39, 0.5);
+}
+#authors .col-lg-2:hover img {
+    transform: scale(1);
+}
+#authors .col-lg-2:hover h4 {
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+#authors .col-lg-2:nth-child(2) .box {
+    animation-delay: .4s;
+}
+#authors .col-lg-2:nth-child(3) .box {
+    animation-delay: .8s;
+}
+#authors .col-lg-2:nth-child(4) .box {
+    animation-delay: 1.2s;
+}
+#authors .col-lg-2:nth-child(5) .box {
+    animation-delay: 1.6s;
+}
+#authors .col-lg-2:nth-child(6) .box {
+    animation-delay: 2s;
+}
+
+/*-------------------ABOUT--------------------*/
+#about{
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+    color: var(--brown);
+    position: relative;
+}
+#about a{
+    text-decoration: none;
+    color: var(--brown);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-underline-position: 2px;
+    text-decoration-color: var(--brown);
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+    transition-duration: 1s;
+}
+#about .secound a:hover{
+    background-color: var(--offwhite);
+    color: var(--golden);
+    text-decoration-color: var(--golden);
+}
+#about .third a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(135deg, #2E1B12 10%, #6F4932 30%, #3B2115 80%);
+    border-radius: 50%;    color: var(--golden);
+    padding: 5px 10px;
+    text-decoration: none;
+    transition-duration: 1s;
+}
+#about .third a i{
+    transition-duration: 1s;
+}
+#about .third a:hover{
+    background: var(--offwhite);
+    color: var(--brown);
+}
+#about .row {
+    position: relative;
+      padding-bottom: 40px;
+}
+#about .row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    height: 2px;
+    background: linear-gradient(135deg,#2E1B12 10%,#6F4932 30%,#3B2115 80%);
+    animation-name: animate1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+#about span{
+    color: var();
+}
+#about a.up{
+    background-color: #3B2115;
+    position: absolute;
+    top: 85%;
+    left: 95%;
+    color: var(--golden);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#about a.up i{
+    transition-duration: 1s;
+}
+#about a.up:hover i{
+    transform: translateY(-3px);
+}
+.accordion-button{
+    background: linear-gradient(135deg,#2E1B12 10%,#6F4932 30%,#3B2115 80%);
+    color: var(--golden);
+    font-weight: 700;
+}
+.accordion-button:focus {
+    color: var(--golden);
+    box-shadow: none;
+}
+/*beacause bootstrap take icons some values initial*/
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(50%) saturate(600%) hue-rotate(5deg);
+}
+.accordion-button::after {
+    filter: brightness(0) saturate(100%) invert(72%) sepia(50%) saturate(600%) hue-rotate(5deg);
+}
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, #2E1B12 10%, #6F4932 30%, #3B2115 80%);
+    color: var(--golden);
+    box-shadow: none;
+}
+.accordion-body{
+    background-color: var(--beige);
+}
+.accordion-collapse{
+    color: var(--golden);
+}
+p span {
+    color: #fff;
+    position: relative;
+    background: linear-gradient( 90deg, #5f4713, #efd289, white, #efd289,#916401);
+    background-size: 200%;
+
+    /*خلي الباك جراوند تظهر ع الكلام بس*/
+    background-clip: text;
+    color: transparent;
+
+    animation-name: shineName;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.slide .box{
+    height: 290px;
+}
+.au{
+    max-width: 250px;
+}
+.accordion-body{
+    height:70px;
+}

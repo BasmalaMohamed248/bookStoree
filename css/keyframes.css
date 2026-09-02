@@ -1,0 +1,165 @@
+/*-------------------ANIMATE IN ABOUT US------------------*/
+@keyframes animate1 {
+    10% {
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+
+/*-------------------ANIMATE IN NAVBAR------------------*/
+@keyframes animateNav {
+    10% {
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+/*-------------------ANIMATE WRITE AND DELETE IN HOME------------------*/
+@keyframes write {
+    /* WRITING*/
+    0% {
+        content: "";
+    }
+
+    4% {
+        content: "S";
+    }
+
+    8% {
+        content: "So";
+    }
+
+    12% {
+        content: "Som";
+    }
+
+    16% {
+        content: "Some";
+    }
+
+    20% {
+        content: "Somew";
+    }
+
+    24% {
+        content: "Somewh";
+    }
+
+    28% {
+        content: "Somewhe";
+    }
+
+    32% {
+        content: "Somewher";
+    }
+
+    36% {
+        content: "Somewhere";
+    }
+
+    40% {
+        content: "Somewhere N";
+    }
+
+    44% {
+        content: "Somewhere Ne";
+    }
+
+    48% {
+        content: "Somewhere New";
+    }
+
+    /* DELETE*/
+    50% {
+        content: "Somewhere New";
+    }
+
+    /* مسح */
+    54% {
+        content: "Somewhere Ne";
+    }
+
+    58% {
+        content: "Somewhere N";
+    }
+
+    62% {
+        content: "Somewhere";
+    }
+
+    66% {
+        content: "Somewher";
+    }
+
+    70% {
+        content: "Somewhe";
+    }
+
+    74% {
+        content: "Somewh";
+    }
+
+    78% {
+        content: "Somew";
+    }
+
+    82% {
+        content: "Some";
+    }
+
+    86% {
+        content: "Som";
+    }
+
+    90% {
+        content: "So";
+    }
+
+    94% {
+        content: "S";
+    }
+
+    100% {
+        content: "";
+    }
+}
+
+/*-------------------ANIMATE TO MOVE BOXES IN CATEGORIES------------------*/
+@keyframes moveBooks {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/*-------------------ANIMATE IN AUTHORS------------------*/
+@keyframes moveAuthor {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*-------------------ANIMATE IN FOOTER------------------*/
+@keyframes shineName {
+    from {
+        background-position: 200%;
+    }
+
+    to {
+        background-position: -200%;
+    }
+}

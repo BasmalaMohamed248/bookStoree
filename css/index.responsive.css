@@ -1,0 +1,210 @@
+/*350*/
+@media (max-width: 1300px) {
+nav img{
+    width: 35%;
+}
+nav .text h3{
+    display: none;
+}
+
+nav .text{
+    display: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+nav .navbar-collapse {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    background: linear-gradient(135deg, #d29b36 10%, #bea054 30%, #ba8615 80%);
+    transform: translate(-50%, 100%);
+    width: 80%;
+    max-width: 300px;
+    height: 0;
+    flex-direction: column;
+    z-index: 3;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0;
+    transition: .5s;
+    overflow:auto;
+}
+nav .navbar-nav .dropdown {
+    position: relative;
+    z-index: 1;
+}
+nav .dropdown-menu.show {
+    display: block;
+}
+nav .dropdown-menu{
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+nav .navbar-collapse.show {
+    height: fit-content;
+    max-height: 400px;
+}
+
+#home .text h3{
+    font-size: 2rem;
+}
+#home .text p {
+    font-size: 1rem;
+    width: 80%;
+}
+#books h2{
+    font-size: 2rem;
+}
+#books .box{
+    width: 90%;
+    max-width: 500px;
+}
+#books .carousel-item .info p {
+    padding: 5px 5px;
+    margin: 0 10px 0;
+}
+#books .carousel-item .actions {
+    gap: 10px;
+    margin: 0 30px 0px;
+}
+#books .carousel-item .actions i {
+    width: 40px;
+    height: 40px;
+}
+#books .carousel-item .info {
+    font-size: 20px;
+}
+#categories .slide {
+    width: 240px;
+}
+}
+
+/*450*/
+@media (min-width: 371px) and (max-width: 1300px) {
+nav img{
+    width: 25%;
+}
+#home .text h3{
+    font-size: 2.5rem;
+}
+#home .text p {
+    font-size: 1.2rem;
+    width: 60%;
+}
+#books .carousel-item .info p {
+    padding: 5px 15px;
+    margin: 0 30px 0;
+}
+#books .carousel-item .actions {
+    gap: 25px;
+    margin: 0 30px 0px;
+}
+#books .carousel-item .actions i {
+    width: 40px;
+    height: 40px;
+}
+#books .carousel-item .info {
+    font-size: 25px;
+}
+#categories .slide {
+    width: 260px;
+}
+}
+
+/*650*/
+@media (min-width: 577px) and (max-width: 1300px) {
+nav img{
+    width: 20%;
+}
+#home .text h3{
+    font-size: 3rem;
+}
+#home .text p {
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+}
+
+/*850*/
+@media (min-width: 769px) and (max-width: 1300px) {
+nav img{
+    width: 17%;
+}
+#home .text h3{
+    font-size: 3.5rem;
+}
+#home .text p {
+    font-size: 1.2rem;
+    width: 60%;
+}
+}
+
+/*1050*/
+@media (min-width: 992px) and (max-width: 1300px) {
+nav img{
+    width: 14%;
+}
+#home .text h3{
+    font-size: 3.5rem;
+    width: 80%;
+}
+#home .text p {
+    font-size: 1.2rem;
+    width: 60%;
+}
+nav img{
+    display: initial;
+}
+nav .navbar-collapse {
+    position: static;
+    width: auto;
+    max-width: none;
+    height: auto;
+    padding: 0;
+    background: none;
+    transform: none;
+    overflow: visible;
+    flex-direction: row;
+    border-radius: 0;
+}
+nav .navbar-nav {
+    flex-direction: row;
+}
+nav .dropdown-menu {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+}
+nav .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+}
+
+/*large screens*/
+@media (min-width: 1181px) and (max-width: 1300px) {
+nav img{
+    width: 9%;
+}
+#home .text h3{
+    font-size: 4rem;
+    width: 80%;
+}
+#home .text p {
+    font-size: 1.2rem;
+    width: 40%;
+}
+nav .text h3{
+    display: initial;
+}
+nav .text{
+    display: initial;
+}
+}

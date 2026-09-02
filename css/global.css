@@ -1,0 +1,33 @@
+/*---------HTML--------*/
+html::-webkit-scrollbar {
+  width: 5px;
+}
+html::-webkit-scrollbar-track {
+    background: var(--brown2);
+}
+html::-webkit-scrollbar-thumb {
+    background: var(--brown);
+  border-radius: 20px;
+}
+/*--------BODY----*/
+body{
+    background: linear-gradient(135deg, #2E1B12 10%, #6F4932 30%, #3B2115 80%);
+    font-family: 'Roboto';
+}
+/*---------COLORS--------*/
+:root{
+    --brown:#3E2723;
+    --brown2:#795548;
+    --beige:#F5E6CC;
+    --offwhite:#FFF8F0;
+    --golden:#C59B27;
+}
+/*--------H-----*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+   font-family: "Cinzel", serif;
+}
